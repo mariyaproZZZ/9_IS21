@@ -1,3 +1,25 @@
+
+# Виртуальное окружение
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Папка с временными файлами
+code/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Файлы с паролями (если не хотите их коммитить)
+passwords.txt
+
 # Виртуальное окружение Python
 venv/
 .venv/
@@ -17,3 +39,4 @@ __pycache__/
 # Логи и временные файлы
 *.log
 *.tmp
+main
