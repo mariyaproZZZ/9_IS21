@@ -1,6 +1,6 @@
 # 🔐 Генератор и оценщик паролей (Вариант 9)
 
-Программный комплекс для создания надежных паролей, анализа их стойкости и безопасного шифрования данных.
+Программный комплекс для генерации надежных паролей, анализа их стойкости и безопасного шифрования.
 
 ---
 
@@ -15,56 +15,55 @@
 
 ## 🛠 Описание модулей
 
-* **Модуль A** (`9_modul_a.py`): Генератор случайных паролей с настраиваемыми параметрами длины и символов.
-* **Модуль B** (`9_modul_b.py`): Анализатор сложности, проверяющий пароль на длину, наличие цифр, регистр и спецсимволы.
-* **Модуль C** (`9_modul_c.py`): Система шифрования (AES/Fernet) и безопасного сохранения паролей в файл.
+* **Модуль A** (`9_modul_a.py`): Генератор случайных паролей с настройкой длины.
+* **Модуль B** (`9_modul_b.py`): Анализатор сложности (проверка на символы, регистр и длину).
+* **Модуль C** (`9_modul_c.py`): Шифрование и запись паролей в защищенное хранилище.
 
 ---
 
 ## 🚀 Инструкция по запуску
 
 ### 1. Клонирование репозитория
-```bash
 git clone [https://github.com/mariyaproZZZ/9_IS21.git](https://github.com/mariyaproZZZ/9_IS21.git)
 cd 9_IS21
 
-2. Запуск модулей
-Вы можете запустить каждый компонент отдельно в зависимости от задачи:
+---
 
-Bash
-python 9_modul_a.py   # Генерация пароля
+
+## 2. Запуск компонентов
+python 9_modul_a.py   # Генерация
 python 9_modul_b.py   # Проверка сложности
-python 9_modul_c.py   # Шифрование и сохранение
-🧪 Разработка и качество кода
-Установка зависимостей
-Для разработки и тестирования необходимо установить дополнительные пакеты:
+python 9_modul_c.py   # Сохранение
 
-Bash
+---
+
+## 🧪 Разработка и тесты
+Установка окружения
 pip install pytest flake8 black
-Инструменты контроля
-Форматирование (Black): Приводит код к единому стандарту.
+---
 
-Bash
+## Качество кода и форматирование
+Black (автоформатирование):
 black 9_modul_a.py 9_modul_b.py 9_modul_c.py
-Linter (Flake8): Проверяет код на наличие стилистических ошибок.
+---
 
-Bash
+## Flake8 (проверка стиля):
 flake8 9_modul_a.py 9_modul_b.py 9_modul_c.py
-Тестирование
-Запуск всех Unit-тестов для проверки корректности работы функций:
 
-Bash
+---
+## Запуск Unit-тестов
 pytest tests/ -v
-📊 Результаты тестов
-Последняя сборка успешно прошла все проверки:
 
-Plaintext
-tests/test_password_modules.py::test_generate_password_default_length PASSED [ 14%]
-tests/test_password_modules.py::test_generate_password_custom_length  PASSED [ 28%]
-tests/test_password_modules.py::test_generate_password_too_short      PASSED [ 42%]
-tests/test_password_modules.py::test_check_strength_weak              PASSED [ 57%]
-tests/test_password_modules.py::test_check_strength_medium            PASSED [ 71%]
-tests/test_password_modules.py::test_check_strength_strong            PASSED [ 85%]
-tests/test_password_modules.py::test_encrypt_decrypt                  PASSED [100%]
+---
+
+## 📊 Статус тестов
+Все модули успешно прошли проверку:
+tests/test_password_modules.py::test_generate_password_default_length PASSED
+tests/test_password_modules.py::test_generate_password_custom_length  PASSED
+tests/test_password_modules.py::test_generate_password_too_short      PASSED
+tests/test_password_modules.py::test_check_strength_weak              PASSED
+tests/test_password_modules.py::test_check_strength_medium            PASSED
+tests/test_password_modules.py::test_check_strength_strong            PASSED
+tests/test_password_modules.py::test_encrypt_decrypt                  PASSED
 
 ✅ 7 passed in 0.03s
