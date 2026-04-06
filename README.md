@@ -31,33 +31,41 @@ cd 9_IS21
 
 
 ## 2. Запуск компонентов
-python 9_modul_a.py   # Генерация
-python 9_modul_b.py   # Проверка сложности
-python 9_modul_c.py   # Сохранение
+
+* python 9_modul_a.py   # Генерация
+* python 9_modul_b.py   # Проверка сложности
+* python 9_modul_c.py   # Сохранение
 
 ---
 
 ## 🧪 Разработка и тесты
 Установка окружения
-pip install pytest flake8 black
+
+* pip install pytest flake8 black
 ---
 
 ## Качество кода и форматирование
 Black (автоформатирование):
-black 9_modul_a.py 9_modul_b.py 9_modul_c.py
+
+* black 9_modul_a.py 9_modul_b.py 9_modul_c.py
+
 ---
 
 ## Flake8 (проверка стиля):
-flake8 9_modul_a.py 9_modul_b.py 9_modul_c.py
+
+* flake8 9_modul_a.py 9_modul_b.py 9_modul_c.py
 
 ---
+
 ## Запуск Unit-тестов
-pytest tests/ -v
+
+* pytest tests/ -v
 
 ---
 
 ## 📊 Статус тестов
 Все модули успешно прошли проверку:
+
 tests/test_password_modules.py::test_generate_password_default_length PASSED
 tests/test_password_modules.py::test_generate_password_custom_length  PASSED
 tests/test_password_modules.py::test_generate_password_too_short      PASSED
