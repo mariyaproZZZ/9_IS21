@@ -13,3 +13,18 @@
 Инструкция по запуску
 1. Клонировать репозиторий
 2. Запустить нужный модуль: `python 9_modul_*.py`
+
+## Разработка
+
+### Установка зависимостей
+```bash
+pip install pytest flake8 black
+
+Запуск тестов:
+py -m pytest tests/ -v
+
+Проверка стиля кода:
+py -m flake8 9_modul_a.py 9_modul_b.py 9_modul_c.py
+
+Форматирование кода:
+py -m black 9_modul_a.py 9_modul_b.py 9_modul_c.py
