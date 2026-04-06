@@ -25,6 +25,7 @@
 
 ### 1. Клонирование репозитория
 git clone [https://github.com/mariyaproZZZ/9_IS21.git](https://github.com/mariyaproZZZ/9_IS21.git)
+
 cd 9_IS21
 
 ---
