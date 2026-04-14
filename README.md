@@ -1,3 +1,4 @@
+[![Python CI](https://github.com/mariyaproZZZ/9_IS21/actions/workflows/ci.yml/badge.svg)](https://github.com/mariyaproZZZ/9_IS21/actions/workflows/ci.yml)
 # 🔐 Генератор и оценщик паролей (Вариант 9)
 
 Программный комплекс для генерации надежных паролей, анализа их стойкости и безопасного шифрования.
